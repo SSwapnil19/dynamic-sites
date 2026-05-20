@@ -1,0 +1,19 @@
+<section>
+  <h1><%= headline %></h1>
+  <p><%= description %></p>
+  <form action="/contact" method="POST" class="form-card">
+    <label>
+      Your name
+      <input type="text" name="name" placeholder="Your name" required />
+    </label>
+    <label>
+      Your email
+      <input type="email" name="email" placeholder="you@example.com" required />
+    </label>
+    <label>
+      Message
+      <textarea name="message" rows="5" placeholder="Write your message" required></textarea>
+    </label>
+    <button type="submit">Send message</button>
+  </form>
+</section>

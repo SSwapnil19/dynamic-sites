@@ -1,0 +1,137 @@
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --text: #1c1f2d;
+  --muted: #5f6779;
+  --primary: #3b82f6;
+  --primary-dark: #1d4ed8;
+  --border: #d6d9e6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  padding: 16px 0;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+nav a {
+  margin-left: 18px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--primary-dark);
+}
+
+.hero {
+  padding: 48px 0;
+}
+
+.hero h1,
+.hero p {
+  margin: 0 0 16px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin: 32px 0;
+}
+
+.card,
+.form-card,
+.result {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.role {
+  color: var(--primary);
+  margin: 6px 0 12px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+}
+
+.form-card label {
+  display: block;
+  margin-bottom: 16px;
+  color: var(--muted);
+}
+
+.form-card input,
+.form-card textarea {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font: inherit;
+}
+
+.form-card button {
+  border: none;
+  background: var(--primary);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.result.success {
+  border-color: #4ade80;
+}
+
+.result.error {
+  border-color: #f87171;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 28px 0 16px;
+  color: var(--muted);
+}

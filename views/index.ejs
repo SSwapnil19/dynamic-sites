@@ -1,0 +1,14 @@
+<section class="hero">
+  <h1><%= headline %></h1>
+  <p><%= description %></p>
+  <div class="cards">
+    <% team.forEach(member => { %>
+      <article class="card">
+        <h2><%= member.name %></h2>
+        <p class="role"><%= member.role %></p>
+        <p><%= member.bio %></p>
+      </article>
+    <% }) %>
+  </div>
+  <a class="button" href="/contact">Get in touch</a>
+</section>
